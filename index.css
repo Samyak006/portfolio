@@ -1,0 +1,146 @@
+
+a{
+    color: rgb(132, 171, 255);
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+    background-image: url(./images/abstract-potrait.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.mail{
+    margin: 20px;
+}
+.container{
+    backdrop-filter: blur(3px);
+}
+.navLinks{
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+    margin: 0% 0% 10% 10%;
+    padding-bottom: 200px;
+    max-width: 100%;
+}
+.intro{
+    margin: 10% auto 10% auto;
+    
+}
+.card{
+    border: 0px;
+    text-align: center;
+    background-color: inherit;
+}
+.notUsed{
+    width: 2%;
+}
+.navTabs{
+    padding: 2%;
+    margin: 2px;
+    border-bottom: 0; /* added by the browswer by default*/
+}
+.imgContainer{
+    /* border-radius: 50%; */
+    overflow: hidden;
+    max-width:30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.otherLinks{
+    margin: 2%;
+    width: 100%;
+    align-items: center;
+}
+.otherLinks *{
+    max-height: 40px;
+    /* padding: 3px; */
+}
+.list-group-item{
+    border: 0;
+    color: inherit;
+    background-color: inherit;
+}
+.navBtn{
+    position: relative;
+    background-color: inherit;
+    color: inherit;
+    width: fit-content;
+    border: 1px solid #ffffff00;
+    border-radius: 12px;
+    margin-bottom: 5px;
+}
+.col-8 .card{
+    text-align: justify;
+    border: 1px solid #ffffff4e;
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+}
+.card > img{
+    max-width: 100%;
+    max-height: 60vh;
+    mix-blend-mode: darken;
+}
+/* For mobile phones: */
+/* [class*="col-"] {
+    width: 100%;
+  } */
+@media only screen and (max-width:699px) {
+    .navLinks{
+        display: none;
+    }
+    .notUsed{
+        display: none;
+    }
+}
+  @media only screen and (min-width: 700px) {
+    /* For tablets: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+  
+::-webkit-scrollbar {
+    width: 10px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.7); 
+  }
+  
