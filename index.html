@@ -7,9 +7,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="./index.css" rel="stylesheet">
+    <link rel="icon" href=
+"./images/title-icon.png"
+        type="image/x-icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-    <title>Portfolio</title>
+    <title>Samyak's portfolio</title>
 </head>
 
 <body>
@@ -22,11 +24,14 @@
                     </div>
                     <div class="card-body">
                         <h1 class="card-title">Samyak Rokade</h1>
-                        <p class="card-text">This is a wider card with supporting text below as a natural
-                            lead-in to
-                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text">
+                            Hi there! Hope you're doing well. I’m thrilled to have you here. This is a space where I showcase my work as a Software Development Engineer, highlighting my skills, projects, and passion for creating innovative solutions.  
+                            
+                            Feel free to explore, learn more about what I do, and connect with me. Whether you’re here to provide feedback, discuss exciting opportunities, or simply network, I’d love to hear from you. Let’s build something amazing together!  
+                            
+                            Thanks for stopping by!</p>
                         <span>
-                            <a href="./assets/RESUME_SR.pdf" class="card-link">
+                            <a href="./assets/RESUME_SR.pdf" target="_blank" class="card-link">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                     fill="currentColor" class="bi bi-paperclip" viewBox="0 0 16 16">
                                     <path
@@ -61,14 +66,74 @@
         <div class="content row">
             <div class="col-2 project">
                 <div class="navLinks">
-                    <a href="#chatbot" class="list-group-item">ChatBot for Question Answering</a>
-                    <a href="#roadTraffic" class="list-group-item">Road Traffic Prediction</a>
                     <a href="#stocks" class="list-group-item ">Stocks and Trend Forecasting</a>
+                    <a href="#roadTraffic" class="list-group-item">Road Traffic Prediction</a>
                     <a href="#searchEngine" class="list-group-item ">GoFlaminGo Search Engine</a>
+                    <a href="#chatbot" class="list-group-item">ChatBot for Question Answering</a>
                 </div>
             </div>
             <div class="col-1 notUsed"></div>
             <div class="project col-8">
+                <div id="stocks" class="card">
+                    <img src="./images/stock-forecasting.png" class="card-img-top" alt="Stock Forecasting Project">
+                    <div class="card-body">
+                        <h5 class="card-title">Stocks and Trend Forecasting</h5>
+                        <p class="card-text">Enhanced stock price predictions by integrating sentiment analysis and LSTM
+                            models.
+                            Skills used: Python, PySpark, TensorFlow, Matplotlib, Seaborn.</p>
+                        <p class="card-text text-muted">Timeline: November 2023</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Increased predictive accuracy by 45% through sentiment integration.
+                        </li>
+                        <li class="list-group-item">Leveraged LSTM models for precise stock price forecasting.</li>
+                        <li class="list-group-item">Used Google's News API for real-time article analysis, improving
+                            robustness.</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="https://github.com/Pranav1107/HackUTD" target="_blank" class="card-link">View Project</a>
+                    </div>
+                </div>
+                <div id="roadTraffic" class="card">
+                    <img src="./images/traffic.png" class="card-img-top" alt="Traffic Prediction Project">
+                    <div class="card-body">
+                        <h5 class="card-title">Road Traffic Prediction</h5>
+                        <p class="card-text">A predictive model for traffic situations using machine learning
+                            algorithms.
+                            Skills used: Python, Sklearn, Matplotlib, Seaborn.</p>
+                        <p class="card-text text-muted">Timeline: November 2023 – December 2023</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Custom Gradient Boosting Algorithm achieved 0.98 accuracy.</li>
+                        <li class="list-group-item">Evaluated multiclass metrics with a 97% classification rate for
+                            traffic situations.</li>
+                        <li class="list-group-item">Benchmarked against Logistic Regression (0.90 accuracy) and KNN
+                            (0.96 accuracy).</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="https://github.com/tkolencherry/ML_Project_2023" target="_blank" class="card-link">View Project</a>
+                    </div>
+                </div>
+                <div id="searchEngine" class="card">
+                    <img src="./images/goFlamingo.png" class="card-img-top" alt="Search Engine Project">
+                    <div class="card-body">
+                        <h5 class="card-title">GoFlaminGo Search Engine</h5>
+                        <p class="card-text">A high-performance search engine designed for optimal user experience on
+                            Microsoft Azure.
+                            Skills used: Java, JavaScript, React.js, Spring Boot, CSS, MongoDB.</p>
+                        <p class="card-text text-muted">Timeline: May 2023 – August 2023</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Constructed using React.js, Spring Boot, MongoDB, Java, and
+                            JavaScript.</li>
+                        <li class="list-group-item">Designed with UML methodologies and various design patterns.</li>
+                        <li class="list-group-item">Adhered to SDLC principles for efficient development and deployment.
+                        </li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="https://github.com/vedantsap/goflamingo" target="_blank" class="card-link">View Project</a>
+                    </div>
+                </div>
                 <div id="chatbot" class="card">
                     <img src="./images/chatbot.png" class="card-img-top" alt="Chatbot Project">
                     <div class="card-body">
@@ -87,70 +152,7 @@
                             0.38.</li>
                     </ul>
                     <div class="card-body">
-                        <a href="#" class="card-link">View Project</a>
-                    </div>
-                </div>
-
-                <div id="roadTraffic" class="card">
-                    <img src="./images/traffic.png" class="card-img-top" alt="Traffic Prediction Project">
-                    <div class="card-body">
-                        <h5 class="card-title">Road Traffic Prediction</h5>
-                        <p class="card-text">A predictive model for traffic situations using machine learning
-                            algorithms.
-                            Skills used: Python, Sklearn, Matplotlib, Seaborn.</p>
-                        <p class="card-text text-muted">Timeline: November 2023 – December 2023</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Custom Gradient Boosting Algorithm achieved 0.98 accuracy.</li>
-                        <li class="list-group-item">Evaluated multiclass metrics with a 97% classification rate for
-                            traffic situations.</li>
-                        <li class="list-group-item">Benchmarked against Logistic Regression (0.90 accuracy) and KNN
-                            (0.96 accuracy).</li>
-                    </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link">View Project</a>
-                    </div>
-                </div>
-
-                <div id="stocks" class="card">
-                    <img src="./images/stock-forecasting.png" class="card-img-top" alt="Stock Forecasting Project">
-                    <div class="card-body">
-                        <h5 class="card-title">Stocks and Trend Forecasting</h5>
-                        <p class="card-text">Enhanced stock price predictions by integrating sentiment analysis and LSTM
-                            models.
-                            Skills used: Python, PySpark, TensorFlow, Matplotlib, Seaborn.</p>
-                        <p class="card-text text-muted">Timeline: November 2023</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Increased predictive accuracy by 45% through sentiment integration.
-                        </li>
-                        <li class="list-group-item">Leveraged LSTM models for precise stock price forecasting.</li>
-                        <li class="list-group-item">Used Google's News API for real-time article analysis, improving
-                            robustness.</li>
-                    </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link">View Project</a>
-                    </div>
-                </div>
-
-                <div id="searchEngine" class="card">
-                    <img src="./images/goFlamingo.png" class="card-img-top" alt="Search Engine Project">
-                    <div class="card-body">
-                        <h5 class="card-title">GoFlaminGo Search Engine</h5>
-                        <p class="card-text">A high-performance search engine designed for optimal user experience on
-                            Microsoft Azure.
-                            Skills used: Java, JavaScript, React.js, Spring Boot, CSS, MongoDB.</p>
-                        <p class="card-text text-muted">Timeline: May 2023 – August 2023</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Constructed using React.js, Spring Boot, MongoDB, Java, and
-                            JavaScript.</li>
-                        <li class="list-group-item">Designed with UML methodologies and various design patterns.</li>
-                        <li class="list-group-item">Adhered to SDLC principles for efficient development and deployment.
-                        </li>
-                    </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link">View Project</a>
+                        <a href="https://colab.research.google.com/drive/1WsKJTh6rOm-tCgNCNPI590zI_SzL8mkw#scrollTo=1IJf1A52TC_3" target="_blank" class="card-link">View Project</a>
                     </div>
                 </div>
             </div>
@@ -168,9 +170,9 @@
             </div>
             <div class="col-1 notUsed"></div>
             <div class="experience col-8">
-                <div class="card">
+                <div id="nidaan-fulltime" class="card">
                     <div class="card-body">
-                        <h5 class="card-title"><a href="#nidaan-fulltime" class="card-link">Nidaan Systems Inc</a>
+                        <h5 class="card-title"><a href="https://nidaansystems.com/" class="card-link">Nidaan Systems Inc</a>
                         </h5>
                         <h6 class="card-subtitle mb-2">Junior Solution
                             Analyst | Dallas, TX | May 2024 – Present</h6>
@@ -190,9 +192,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="card">
+                <div id="nidaan-intern" class="card">
                     <div class="card-body">
-                        <h5 class="card-title"><a href="#nidaan-intern" class="card-link">Nidaan Systems Inc</a></h5>
+                        <h5 class="card-title"><a href="https://nidaansystems.com/" class="card-link">Nidaan Systems Inc</a></h5>
                         <h6 class="card-subtitle mb-2 text-muted">Junior Solution Analyst
                             Intern | September 2023 – May 2024</h6>
                         <p class="card-text">
@@ -210,9 +212,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="card mb-3">
+                <div id="cogitativum" class="card mb-3">
                     <div class="card-body">
-                        <h5 class="card-title"><a href="#cogitativum" class="card-link">Cogitativum Ventures</a></h5>
+                        <h5 class="card-title"><a href="https://intro.cogitativum.com/" class="card-link">Cogitativum Ventures</a></h5>
                         <h6 class="card-subtitle mb-2 text-muted">Software Developer (Intern) | Mumbai, India | March 2021 - July
                             2021</h6>
                         <p class="card-text">
@@ -230,9 +232,9 @@
                     </div>
                 </div>
 
-                <div class="card mb-3">
+                <div id="autum" class="card mb-3">
                     <div class="card-body">
-                        <h5 class="card-title"><a href="#autumn" class="card-link">Autumn Labs</a></h5>
+                        <h5 class="card-title"><a href="https://www.linkedin.com/company/autumn-tech-labs/jobs/" class="card-link">Autumn Labs</a></h5>
                         <h6 class="card-subtitle mb-2 text-muted">Backend Developer (Intern) | Remote (Mumbai, India) | April 2021
                             - May 2021</h6>
                         <p class="card-text">
@@ -261,9 +263,9 @@
             </div>
             <div class="col-1 notUsed"></div>
             <div class="education col-8">
-                <div class="card">
+                <div id="masters" class="card">
                     <div class="card-body">
-                        <h5 class="card-title"><a href="#masters" class="card-link">University of Texas at Dallas</a>
+                        <h5 class="card-title"><a href="https://www.utdallas.edu/" class="card-link">University of Texas at Dallas</a>
                         </h5>
                         <h6 class="card-subtitle mb-2 text-muted">Master of Science, Computer Science (Data Science)
                         </h6>
@@ -273,9 +275,9 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div id="bachelors" class="card">
                     <div class="card-body">
-                        <h5 class="card-title"><a href="#bachelors" class="card-link">University of Mumbai</a></h5>
+                        <h5 class="card-title"><a href="https://www.fcrit.ac.in/" class="card-link">University of Mumbai</a></h5>
                         <h6 class="card-subtitle mb-2 text-muted">Bachelor of Engineering, Electronics and
                             Telecommunications</h6>
                         <p class="card-text">Relevant Coursework: Structured Programming Approach, OOP using Java, Data
